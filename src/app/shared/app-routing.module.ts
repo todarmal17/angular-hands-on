@@ -12,18 +12,14 @@ const routes: Routes = [
     canActivateChild: [AuthGuardService],
     children: [
       {
-        path: 'start',
+        path: '',
         canActivate: [AuthGuardService],
         redirectTo: '/booklist',
-        pathMatch: 'full'
-      },
-      {
-        path: '',
-        redirectTo: '/booklist',
         pathMatch: 'full',
-      },
+      }
     ]
   },
+  { path: '**', loadChildren: () => import('../book-list/book-list.module').then(m => m.BookListModule) }
 ];
 
 @NgModule({

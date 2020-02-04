@@ -1,0 +1,32 @@
+@import "../../../styles.scss";
+
+.bg {
+  width: 100%;
+  min-height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  background: $primaryBackgroundColor;
+
+  .wrapped-container {
+    max-width: 800px;
+    width: 100%;
+    margin: auto;
+    overflow-x: auto;
+
+    .column-width {
+      max-width: 100px;
+      overflow-x: auto;
+    }
+  }
+
+  mat-cell,
+  .mat-cell,
+  mat-footer-cell,
+  .mat-footer-cell,
+  mat-header-cell .mat-header-cell {
+    padding: 0.75rem !important;
+  }
+
+
+}

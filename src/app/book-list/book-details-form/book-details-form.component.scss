@@ -1,0 +1,47 @@
+.book-details-form {
+  box-sizing: border-box;
+  width: 400px;
+  margin-top: 8px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+
+  mat-form-field {
+    padding-top: 8px;
+  }
+
+  input {
+    text-align: left;
+    font-size: 18px;
+    font-weight: 100;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 5px;
+  }
+
+  .full-width {
+    width: 100%;
+  }
+
+  .button-wrapper {
+    margin-top: 8px;
+  }
+
+  /* Change the white to any color ;) */
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+    -webkit-transition-delay: 9999s;
+    -webkit-transition: color 9999s ease-out, background-color 9999s ease-out;
+    -webkit-text-fill-color: #444748;
+  }
+
+  .align-end-wrapper {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .form-button {
+    margin-right: 10px;
+  }
+}

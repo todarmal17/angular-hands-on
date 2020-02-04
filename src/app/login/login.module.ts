@@ -12,10 +12,12 @@ const routes: Routes = [
   imports: [
     CommonModule,
     SharedModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
+
   ],
   declarations: [
     LoginComponent
-  ]
+  ],
+  providers: []
 })
 export class LoginModule { }

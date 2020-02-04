@@ -1,3 +1,9 @@
-<mat-toolbar>
+<mat-toolbar color="cyan">
   <span>Angular Hands On</span>
+  <span class="fill-remaining-space"></span>
+  <span *ngIf="showLogoutBtn" class="align-end-wrapper">
+    <button mat-raised-button (click)="logout()">
+      LOGOUT
+    </button>
+  </span>
 </mat-toolbar>

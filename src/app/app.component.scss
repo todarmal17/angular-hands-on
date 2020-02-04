@@ -1,9 +1,8 @@
-// initial loader
-.initial-loader {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-
+.content-container-wrap {
+  overflow: auto;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 64px;
 }
